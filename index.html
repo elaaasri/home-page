@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Delicious+Handrawn&family=Press+Start+2P&family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/96f630ca48.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- container wrapping all layout sections -->
+    <div class="container">
+      <!-- header section -->
+      <header>
+        <img
+          id="home-page-logo"
+          src="images/walter-white-icon.jpeg"
+          alt="walter icon"
+        />
+        <nav id="desktop-nav-container">
+          <ul id="desktop-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- overlay and nav bar up windows -->
+        <i id="mobile-nav-icon" class="fa-solid fa-bars"></i>
+        <div id="nav-overlay-window" style="display: none"></div>
+        <nav id="mobile-nav-container" style="display: none">
+          <div id="mobile-nav-title">
+            <i id="title-nav-icon" class="fa-solid fa-bars"></i>
+            <p>MENU</p>
+          </div>
+          <ul id="mobile-nav-list">
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-user"></i>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-list"></i>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-address-book"></i>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main section -->
+      <main>
+        <section id="section1">
+          <h2>Section 1</h2>
+          <p>Content for section 1.</p>
+        </section>
+        <section id="section2">
+          <h2>Section 2</h2>
+          <p>Content for section 2.</p>
+        </section>
+      </main>
+
+      <!-- footer section -->
+      <footer>
+        <p>this is the footer</p>
+      </footer>
+    </div>
+  </body>
+</html>
