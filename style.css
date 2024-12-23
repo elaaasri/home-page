@@ -8,7 +8,8 @@ body {
   background-color: rgb(14, 18, 26);
   color: white;
   font-size: 16px;
-  font-family: "Cute Font", cursive;
+  /* font-family: "Cute Font", cursive; */
+  font-family: "Anonymous Pro";
 }
 /* container styles */
 .container {
@@ -20,6 +21,7 @@ body {
     "main main main main"
     "footer footer footer footer";
   gap: 30px;
+  height: 100vh;
 }
 /* header styles */
 header {
@@ -48,10 +50,8 @@ header {
   list-style: none;
 }
 #desktop-nav-list a {
-  font-family: "Cute Font", cursive;
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
   padding: 10%;
   border-radius: 10%;
   transition: background-color 0.4s ease;
@@ -65,7 +65,7 @@ header {
   font-size: 1.5rem;
 }
 /* mobile nav container styles */
-/* overlay and winner pop up windows styles */
+/* overlay mobile nav window styles */
 #nav-overlay-window {
   position: fixed;
   top: 0;
@@ -96,8 +96,8 @@ header {
 }
 #mobile-nav-title {
   display: flex;
-  padding: 0% 10%;
-  font-size: 3rem;
+  padding: 5% 0% 5% 10%;
+  font-size: 2.5rem;
   gap: 1rem;
   align-items: center;
   border-bottom: white solid 1px;
@@ -124,10 +124,12 @@ header {
   background-color: #516177;
 }
 #mobile-nav-list a {
-  font-family: "Cute Font", cursive;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  min-height: 30px;
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
 }
 /* animation for mobile nav container */
 @keyframes slide-in {
@@ -138,13 +140,37 @@ header {
     transform: translateX(0%);
   }
 }
-
 @keyframes slide-out {
   from {
     transform: translateX(0%);
   }
   to {
     transform: translateX(-100%);
+  }
+}
+/* main container styles */
+.main-container {
+  grid-area: main;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 10px black;
+  min-width: 50%;
+  max-height: 300px;
+  font-size: 5rem;
+}
+#letter-effect-text {
+  font-weight: bold;
+  text-shadow: 0.07em 0em black;
+}
+
+@keyframes show-letter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -167,13 +193,6 @@ header {
 }
 
 /* /////////////////////////////////////// */
-
-main {
-  grid-area: main;
-  /* background-color: lightgray; */
-  /* border: red solid 2px; */
-  padding: 20px;
-}
 
 footer {
   grid-area: footer;
