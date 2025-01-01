@@ -1,7 +1,9 @@
 const mobileNavContainer = document.getElementById("mobile-nav-container");
 const navOverlayWindow = document.getElementById("nav-overlay-window");
 const mobileNavIcon = document.getElementById("mobile-nav-icon");
-const letterEffectText = document.getElementById("letter-effect-text");
+const homeSecondDescDiv = document.getElementById("home-second-desc");
+const firstGreetingDiv = document.getElementById("first-greeting");
+const cursor = document.getElementById("cursor");
 // const viewportWidth = window.innerWidth;
 
 // show mobile container :
@@ -30,8 +32,8 @@ navOverlayWindow.addEventListener("click", hideMobileNavContainer);
 // random letter effect animation func :
 const randomLetterEffect = (element) => {
   const characters =
-    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&^+=-.";
-  const targetText = "Hello.";
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.YZ#%&^+=-'., ";
+  const targetText = "I'm elaaasri, I'm A Developer.";
   let currentIndex = 0;
   const displayLetter = () => {
     let id = setInterval(() => {
@@ -45,10 +47,26 @@ const randomLetterEffect = (element) => {
           element.textContent.slice(0, currentIndex) + targetText[currentIndex];
         currentIndex++;
       }
-    }, 30);
+    }, 25);
   };
-  for (let i = 0; i < targetText.length; i++) {
-    displayLetter();
-  }
+  targetText.split("").forEach(() => displayLetter());
 };
-randomLetterEffect(letterEffectText);
+// random letter effect event :
+setTimeout(() => {
+  randomLetterEffect(homeSecondDescDiv);
+}, 3000);
+
+// type writer effect animation func :
+const typeWriterEffect = (element) => {
+  // element.style.visibility = "visible";
+  const targetText = "HEY, I'M ANAS ELASRI 👋, WELCOME TO MY CREATIVE CORNER.";
+  targetText.split("").forEach((letter, index) => {
+    setTimeout(() => {
+      element.textContent += letter;
+    }, index * 250);
+  });
+};
+// type writer effect event :
+setTimeout(() => {
+  typeWriterEffect(firstGreetingDiv);
+}, 6000);

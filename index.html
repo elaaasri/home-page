@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test</title>
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Delicious+Handrawn&family=Press+Start+2P&family=Sedgwick+Ave+Display&display=swap"
-      rel="stylesheet"
-    /> -->
     <link
       href="https://fonts.googleapis.com/css?family=Anonymous+Pro"
       rel="stylesheet"
@@ -20,62 +16,97 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- container wrapping all layout sections -->
-    <div class="container">
-      <!-- header section -->
-      <header>
+    <!-- header section -->
+    <header id="header-container">
+      <img
+        id="home-page-logo"
+        src="images/walter-white-icon.jpeg"
+        alt="walter icon"
+      />
+      <nav id="desktop-nav-container">
+        <ul id="desktop-nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- overlay and nav bar up windows -->
+      <i id="mobile-nav-icon" class="fa-solid fa-bars"></i>
+      <div id="nav-overlay-window" style="display: none"></div>
+      <nav id="mobile-nav-container" style="display: none">
+        <div id="mobile-nav-title">
+          <i id="title-nav-icon" class="fa-solid fa-bars"></i>
+          <p>MENU</p>
+        </div>
+        <ul id="mobile-nav-list">
+          <li>
+            <i class="fa-solid fa-house"></i>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-list"></i>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-address-book"></i>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <main class="main-container">
+      <div id="home-content">
+        <div id="home-first-desc">Hello.</div>
+        <div id="home-second-desc"></div>
+      </div>
+      <div id="about-container">
         <img
-          id="home-page-logo"
-          src="images/walter-white-icon.jpeg"
-          alt="walter icon"
+          id="about-image"
+          src="./images/about-image.jpg"
+          alt="self image."
         />
-        <nav id="desktop-nav-container">
-          <ul id="desktop-nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- overlay and nav bar up windows -->
-        <i id="mobile-nav-icon" class="fa-solid fa-bars"></i>
-        <div id="nav-overlay-window" style="display: none"></div>
-        <nav id="mobile-nav-container" style="display: none">
-          <div id="mobile-nav-title">
-            <i id="title-nav-icon" class="fa-solid fa-bars"></i>
-            <p>MENU</p>
+        <div id="intro-container">
+          <div id="about-title">About:</div>
+          <div id="intro-description">
+            <div id="typing-area">
+              <span id="first-greeting"></span>
+              <div id="cursor"></div>
+            </div>
+            <br />
+            <span id="second-greeting"
+              >Passionate front-end developer, focused on creating responsive,
+              user-friendly interfaces. Skilled in HTML, CSS, JavaScript, and
+              modern frameworks. I enjoy solving challenges and bringing
+              creative ideas to life.</span
+            >
+            <div id="about-links">
+              <a
+                class="fa-brands fa-github"
+                href="https://github.com/elaaasri"
+              ></a>
+              <a
+                class="fa-brands fa-linkedin"
+                href="https://www.linkedin.com/in/anas-elasri/"
+              ></a>
+            </div>
           </div>
-          <ul id="mobile-nav-list">
-            <li>
-              <i class="fa-solid fa-house"></i>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-user"></i>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-list"></i>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-address-book"></i>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        </div>
+      </div>
+      <div id="projects">projects :</div>
+      <div id="contact">contact :</div>
+    </main>
 
-      <!-- main section -->
-      <main class="main-container">
-        <span id="letter-effect-text"></span>
-      </main>
-
-      <!-- footer section -->
-      <footer>
-        <p>this is the footer</p>
-      </footer>
-    </div>
+    <!-- footer section -->
+    <footer>
+      <p>this is the footer</p>
+    </footer>
   </body>
 </html>
