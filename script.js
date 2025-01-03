@@ -3,7 +3,6 @@ const navOverlayWindow = document.getElementById("nav-overlay-window");
 const mobileNavIcon = document.getElementById("mobile-nav-icon");
 const homeSecondDescDiv = document.getElementById("home-second-desc");
 const firstGreetingDiv = document.getElementById("first-greeting");
-const cursor = document.getElementById("cursor");
 // const viewportWidth = window.innerWidth;
 
 // show mobile container :

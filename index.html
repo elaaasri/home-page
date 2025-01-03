@@ -8,6 +8,11 @@
       href="https://fonts.googleapis.com/css?family=Anonymous+Pro"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/96f630ca48.js"
       crossorigin="anonymous"
@@ -18,11 +23,7 @@
   <body>
     <!-- header section -->
     <header id="header-container">
-      <img
-        id="home-page-logo"
-        src="images/walter-white-icon.jpeg"
-        alt="walter icon"
-      />
+      <i class="home-logo fa-brands fa-wolf-pack-battalion"></i>
       <nav id="desktop-nav-container">
         <ul id="desktop-nav-list">
           <li><a href="#home">Home</a></li>
@@ -61,12 +62,14 @@
       </nav>
     </header>
 
-    <!-- main section -->
+    <!-- main section container -->
     <main class="main-container">
+      <!-- home section -->
       <div id="home-content">
         <div id="home-first-desc">Hello.</div>
         <div id="home-second-desc"></div>
       </div>
+      <!-- about section -->
       <div id="about-container">
         <img
           id="about-image"
@@ -98,6 +101,25 @@
               ></a>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- skills section -->
+      <div id="skills-container">
+        <div id="skills-title">Skills:</div>
+        <div class="skills-carousel">
+          <i class="skill-icon fa-brands fa-html5"></i>
+          <i class="skill-icon fa-brands fa-css3-alt"></i>
+          <i class="skill-icon fa-brands fa-square-js"></i>
+          <i class="skill-icon devicon-webpack-plain"></i>
+          <i class="skill-icon devicon-jest-plain"></i>
+          <i class="skill-icon fa-brands fa-git-alt"></i>
+          <!-- duplicate items for infinite scrolling -->
+          <i class="skill-icon fa-brands fa-html5"></i>
+          <i class="skill-icon fa-brands fa-css3-alt"></i>
+          <i class="skill-icon fa-brands fa-square-js"></i>
+          <i class="skill-icon devicon-webpack-plain"></i>
+          <i class="skill-icon devicon-jest-plain"></i>
+          <i class="skill-icon fa-brands fa-git-alt"></i>
         </div>
       </div>
       <div id="projects">projects :</div>

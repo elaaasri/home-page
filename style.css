@@ -11,12 +11,10 @@ body {
   flex-direction: column;
   color: white;
   font-family: "Anonymous Pro";
-  /* background-color: rgb(14, 18, 26); */
   background-color: rgb(3, 5, 14);
 }
 /* header styles */
 #header-container {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -25,11 +23,9 @@ body {
   padding: 0 10%;
   border-bottom: 1px solid black;
 }
-#home-page-logo {
-  max-width: 40px;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+.home-logo {
+  font-size: 2.5rem;
+  color: white;
 }
 /* desktop nav container styles */
 #desktop-nav-list {
@@ -149,13 +145,12 @@ body {
 
 /* main container styles */
 .main-container {
-  /* flex-wrap: wrap; */
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10rem;
+  gap: 8rem;
   align-items: center;
 }
 #projects {
@@ -291,6 +286,63 @@ body {
 .fa-linkedin:hover {
   transform: rotate(360deg) scale(1.3);
 }
+/* skills container styles */
+#skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  min-height: 150px;
+  overflow: hidden;
+  background-color: black;
+  box-shadow: 0px 5px 10px blue, 0px 0px 5px blue;
+}
+#skills-title {
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline blue;
+}
+.skill-icon {
+  font-size: 5rem;
+  display: inline-block;
+  max-width: 100px;
+  text-align: center;
+  padding: 20px;
+}
+.skills-carousel {
+  display: flex;
+  animation: scrolling 8s linear infinite;
+}
+.skills-carousel:hover {
+  animation-play-state: paused;
+}
+.fa-html5:hover {
+  color: red;
+}
+.fa-css3-alt:hover {
+  color: rgb(0, 162, 255);
+}
+.fa-square-js:hover {
+  color: yellow;
+}
+.devicon-webpack-plain:hover {
+  color: rgb(93, 93, 255);
+}
+.devicon-jest-plain:hover {
+  color: rgb(255, 125, 147);
+}
+.fa-git-alt:hover {
+  color: rgb(232, 118, 42);
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}
+
 /* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
 /* for larger desktop */
 @media (max-width: 1440px) {
@@ -302,7 +354,10 @@ body {
     display: none;
   }
   #mobile-nav-icon {
-    display: block;
+    display: inline-block;
+    justify-content: end;
+    justify-self: end;
+    text-align: end;
   }
   #about-container {
     display: flex;
@@ -321,20 +376,8 @@ body {
     right: 0;
     bottom: 40px;
     box-shadow: 0px 5px 10px blue;
-
-    /* align-content: center; */
-    /* max-width: 30%;
-    height: auto;
-    position: relative;
-    bottom: 70px;
-    right: 30px;
-    align-self: center;
-    box-shadow: 0px 5px 5px blue;
-    animation: slide-in 1500ms; */
   }
-  /* fix self image */
 }
-
 /* for mobile devices */
 @media (max-width: 500px) {
   #home-content {
@@ -345,6 +388,16 @@ body {
   }
   #home-second-desc {
     font-size: 1.1rem;
+  }
+  #skills-container {
+    max-width: 350px;
+    min-height: 120px;
+  }
+  #skills-title {
+    font-size: 1.2rem;
+  }
+  .skill-icon {
+    font-size: 3rem;
   }
 }
 
