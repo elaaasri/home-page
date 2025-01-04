@@ -69,3 +69,6 @@ const typeWriterEffect = (element) => {
 setTimeout(() => {
   typeWriterEffect(firstGreetingDiv);
 }, 6000);
+
+// make animation starts when view width is active
+// footer
