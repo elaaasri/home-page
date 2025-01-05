@@ -3,7 +3,7 @@ const navOverlayWindow = document.getElementById("nav-overlay-window");
 const mobileNavIcon = document.getElementById("mobile-nav-icon");
 const homeSecondDescDiv = document.getElementById("home-second-desc");
 const firstGreetingDiv = document.getElementById("first-greeting");
-// const viewportWidth = window.innerWidth;
+const allProjects = document.querySelectorAll(".project");
 
 // show mobile container :
 const showMobileNavContainer = () => {
@@ -70,5 +70,15 @@ setTimeout(() => {
   typeWriterEffect(firstGreetingDiv);
 }, 6000);
 
-// make animation starts when view width is active
-// footer
+// add animate class to an element as soon it cross the viewport:
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry.isIntersecting);
+    if (entry.isIntersecting) {
+      const targetElement = entry.target;
+      targetElement.classList.add("animate");
+    }
+  });
+});
+// effect event
+allProjects.forEach((project) => observer.observe(project));
