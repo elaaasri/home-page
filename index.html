@@ -27,10 +27,12 @@
       <i class="home-logo fa-brands fa-wolf-pack-battalion"></i>
       <nav id="desktop-nav-container">
         <ul id="desktop-nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#home-section-link">Home</a>
+          </li>
+          <li><a href="#about-section-link">About</a></li>
+          <li><a href="#skills-section-link">Skills</a></li>
+          <li><a href="#projects-section-link">Projects</a></li>
         </ul>
       </nav>
 
@@ -45,19 +47,19 @@
         <ul id="mobile-nav-list">
           <li>
             <i class="fa-solid fa-house"></i>
-            <a href="#home">Home</a>
+            <a href="#home-section-link">Home</a>
           </li>
           <li>
             <i class="fa-solid fa-user"></i>
-            <a href="#about">About</a>
+            <a href="#about-section-link">About</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-list-check"></i>
+            <a href="#skills-section-link">Skills</a>
           </li>
           <li>
             <i class="fa-solid fa-list"></i>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-address-book"></i>
-            <a href="#contact">Contact</a>
+            <a href="#projects-section-link">Projects</a>
           </li>
         </ul>
       </nav>
@@ -66,12 +68,12 @@
     <!-- main section container -->
     <main class="main-container">
       <!-- home section -->
-      <div id="home-content">
+      <div class="home-content" id="home-section-link">
         <div id="home-first-desc">Hello.</div>
         <div id="home-second-desc"></div>
       </div>
       <!-- about section -->
-      <div id="about-container">
+      <div class="about-container" id="about-section-link">
         <img
           id="about-image"
           src="./images/about-image.jpg"
@@ -105,7 +107,7 @@
         </div>
       </div>
       <!-- skills section -->
-      <div id="skills-container">
+      <div class="skills-container" id="skills-section-link">
         <div id="skills-title">Skills:</div>
         <div class="skills-carousel">
           <i class="skill-icon fa-brands fa-html5"></i>
@@ -123,7 +125,8 @@
           <i class="skill-icon fa-brands fa-git-alt"></i>
         </div>
       </div>
-      <div id="projects-container">
+      <!-- projects container -->
+      <div class="projects-container" id="projects-section-link">
         <div id="projects-title">Projects🌴</div>
         <div id="projects-list">
           <div id="left-projects">
@@ -252,8 +255,14 @@
     </main>
 
     <!-- footer section -->
-    <footer>
-      <p>this is the footer</p>
+    <footer class="footer">
+      <p>Copyright©</p>
+      &nbsp;
+      <p>elaaasri</p>
+      &nbsp;
+      <a href="https://github.com/elaaasri">
+        <i class="footer-git-icon fab fa-github"></i>
+      </a>
     </footer>
   </body>
 </html>

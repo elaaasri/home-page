@@ -73,12 +73,11 @@ setTimeout(() => {
 // add animate class to an element as soon it cross the viewport:
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry.isIntersecting);
     if (entry.isIntersecting) {
       const targetElement = entry.target;
       targetElement.classList.add("animate");
     }
   });
 });
-// effect event
+// observer event :
 allProjects.forEach((project) => observer.observe(project));
