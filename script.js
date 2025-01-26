@@ -32,7 +32,7 @@ navOverlayWindow.addEventListener("click", hideMobileNavContainer);
 const randomLetterEffect = (element) => {
   const characters =
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.YZ#%&^+=-'., ";
-  const targetText = "I'm elaaasri, I'm A Developer.";
+  const targetText = "I'm elaaasri, I'm a developer.";
   let currentIndex = 0;
   const displayLetter = () => {
     let id = setInterval(() => {
